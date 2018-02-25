@@ -19,3 +19,7 @@ CREATE TABLE `users` (
   `is_admin` tinyint DEFAULT 0,
   PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=1;
+
+# Insert into table users
+INSERT INTO `users` (`id`, `last_name`, `first_name`, `email`, `password`, `is_admin`)
+VALUES (1, 'Alpha', 'Joe', 'joe.alpha@foo.com', 'admin', 0);
