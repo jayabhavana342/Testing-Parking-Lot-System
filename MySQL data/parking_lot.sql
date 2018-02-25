@@ -37,3 +37,7 @@ CREATE TABLE `frequent_parking_users` (
   PRIMARY KEY (`id`)
 )
   AUTO_INCREMENT = 1;
+
+# Insert into table frequent_parking_users
+INSERT INTO `frequent_parking_users` (`id`, `last_name`, `first_name`, `email`, `address`, `phone`, `license_id`)
+VALUES (1, 'Doe', 'John', 'john.doe@foo.com', 'txstate rrc', '555555555', 'A123A123');
