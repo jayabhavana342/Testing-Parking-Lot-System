@@ -4,3 +4,11 @@ Parking lot Management is a **MVC(Model View Controller) Architecture** based **
 
 ## ER Diagram for Database 
 ![database er diagram v1](https://user-images.githubusercontent.com/26471348/36635890-51e3d7ae-1982-11e8-9dcd-28fe8165d877.png)
+
+
+#### Project Members:
+- :woman: Jaya Naga Bhavana Kommuru
+- :woman: Aishwarya Rana
+- :woman: Sivaranjani Karuppannan Subbarayan
+- :woman: Mehak Agarwal
+- :man: Micheal Ndame
