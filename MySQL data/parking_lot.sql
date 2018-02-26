@@ -81,7 +81,19 @@ CREATE TABLE `frequent_parking_users` (
   AUTO_INCREMENT = 1;
 
 INSERT INTO `frequent_parking_users` (`id`, `last_name`, `first_name`, `email`, `address`, `phone`, `license_id`)
-VALUES (1, 'Doe', 'John', 'john.doe@foo.com', 'txstate rrc', '555555555', 'A123A123');
+VALUES (1, 'karupanan', 'Shivaranjani', 'shivaranjani.karupanan@foo.com', 'txstate rrc', '515515515', 'A123A123');
+
+INSERT INTO `frequent_parking_users` (`id`, `last_name`, `first_name`, `email`, `address`, `phone`, `license_id`)
+VALUES (2, 'Kommuru', 'Bhavana', 'bhavana.kommuru@foo.com', 'txstate rrc', '616616616', 'A000A000');
+
+INSERT INTO `frequent_parking_users` (`id`, `last_name`, `first_name`, `email`, `address`, `phone`, `license_id`)
+VALUES (3, 'Agarwal', 'Mehak', 'mehak.agarwal@foo.com', 'txstate rrc', '717717717', 'A111A111');
+
+INSERT INTO `frequent_parking_users` (`id`, `last_name`, `first_name`, `email`, `address`, `phone`, `license_id`)
+VALUES (4, 'Rana', 'Aishwarya', 'aishwarya.rana@foo.com', 'txstate rrc', '818818818', 'A222A222');
+
+INSERT INTO `frequent_parking_users` (`id`, `last_name`, `first_name`, `email`, `address`, `phone`, `license_id`)
+VALUES (5, 'Ndame', 'Micheal', 'mike.adam@foo.com', 'txstate rrc', '919919919', 'A333A33');
 
 
 CREATE TABLE `frequent_parker_vehicle_details` (
