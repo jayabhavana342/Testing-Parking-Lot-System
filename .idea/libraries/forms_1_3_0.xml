@@ -1,10 +1,23 @@
 <component name="libraryTable">
   <library name="forms-1.3.0">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/lib/swt-win32-2.1.0.jar!/" />
+    </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/forms-1.3.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.45-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/swt-win32-2.1.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/swt-win32-2.1.0.jar!/" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="jar://$PROJECT_DIR$/lib/swt-win32-2.1.0.jar!/" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/swt-win32-2.1.0.jar!/" />
+    </SOURCES>
+    <jarDirectory url="jar://$PROJECT_DIR$/lib/swt-win32-2.1.0.jar!/" recursive="false" />
+    <jarDirectory url="jar://$PROJECT_DIR$/lib/swt-win32-2.1.0.jar!/" recursive="false" type="SOURCES" />
   </library>
 </component>
