@@ -20,6 +20,7 @@ class MyComparator implements Comparator<Pair> {
 		return (new Integer(a.getx())).compareTo(new Integer(b.getx()));
     }
 }
+
 class MyFrame extends JFrame implements ActionListener, MouseListener{
 	int V,INF;
 	ArrayList<Pair> vertexMapping;
@@ -39,16 +40,12 @@ class MyFrame extends JFrame implements ActionListener, MouseListener{
 		setExtendedState(JFrame.MAXIMIZED_BOTH);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JPanel p = new JPanel();
-		JLabel pic = new JLabel(new ImageIcon("layout.png"));
-		p.add(pic);
 		p.addMouseListener(this);
-		Color c = new Color(0,63,0);
-		//setLayout(new BorderLayout());
-		JLabel background=new JLabel(new ImageIcon("C:\\Users\\Computer\\Downloads\\colorful design.png"));
-		add(background);
-		p.setBackground(c);
+		setLayout(new BorderLayout());
+		p.add(new JLabel(new ImageIcon(getClass().getClassLoader().getResource("layout.png"))));
+		p.setBackground(Color.green);
 		setLayout(new FlowLayout());
-		p.setPreferredSize( new Dimension( getWidth(), 550 ) );
+		p.setPreferredSize( new Dimension( getWidth(), 700 ) );
 		add(p);
 		JPanel p1 = new JPanel();
 		p1.setLayout(null);
@@ -126,19 +123,19 @@ class MyFrame extends JFrame implements ActionListener, MouseListener{
 			Graphics g= getGraphics();	
 			int midx = (x1+x2)/2;
 			int midy = (y1+y2)/2;
-			g.drawLine(x1,y1,x2,y2);
+			//g.drawLine(x1,y1,x2,y2);
 			g.setColor(new Color(190,255,190));
-			g.fillOval(x1-50/2,y1-50/2,50,50);
+			g.fillOval(x1-10/2,y1-10/2,10,10);
 			g.setColor(Color.BLACK);
-			g.drawOval(x1-50/2,y1-50/2,50,50);
-			g.setFont(new Font("TimesRoman", Font.PLAIN, 20));
-			g.drawString(new Integer(from).toString(),x1-5,y1+5);
+			g.drawOval(x1-10/2,y1-10/2,10,10);
+			g.setFont(new Font("TimesRoman", Font.PLAIN, 0));
+			g.drawString(new Integer(from).toString(),x1,y1);
 			g.setColor(new Color(190,255,190));
-			g.fillOval(x2-50/2,y2-50/2,50,50);
+			g.fillOval(x2-10/2,y2-10/2,10,10);
 			g.setColor(Color.BLACK);
-			g.drawOval(x2-50/2,y2-50/2,50,50);
-			g.setFont(new Font("TimesRoman", Font.PLAIN, 20));
-			g.drawString(new Integer(to).toString(),x2-5,y2+5);	
+			g.drawOval(x2-10/2,y2-10/2,10,10);
+			g.setFont(new Font("TimesRoman", Font.PLAIN, 0));
+			g.drawString(new Integer(to).toString(),x2,y2);	
 			g.drawString(new Integer(weight).toString(),midx-5,midy+5);
 			adjList.get(from).add(new Pair(to,weight));
 			adjList.get(to).add(new Pair(from,weight));
@@ -162,14 +159,14 @@ class MyFrame extends JFrame implements ActionListener, MouseListener{
 		int x = e.getX();
 		int y = e.getY();
 		vertexMapping.add(new Pair(x,y));
-		int width =50,height=50;
+		int width =10,height=10;
 		String text = i.toString();
 		Graphics g= getGraphics();
 		g.setColor(new Color(190,255,190));
 		g.fillOval(x-width/2,y-height/2,width,height);
 		g.setColor(Color.BLACK);
 		g.drawOval(x-width/2,y-height/2,width,height);
-		g.setFont(new Font("TimesRoman", Font.PLAIN, 20));
+		g.setFont(new Font("TimesRoman", Font.PLAIN, 0));
 		g.drawString(text,x-5,y+5);
 		V++;
 	}
@@ -181,14 +178,14 @@ class MyFrame extends JFrame implements ActionListener, MouseListener{
 		Pair p = vertexMapping.get(vertex);
 		int x = p.getx();
 		int y = p.gety();	
-		int width =50,height=50;
+		int width =10,height=10;
 		Graphics g= getGraphics();
 		g.setColor(Color.BLACK);
 		g.fillOval(x-width/2,y-height/2,width,height);
 		g.setColor(Color.RED);
 		g.drawOval(x-width/2,y-height/2,width,height);
 		g.setColor(Color.WHITE);
-		g.setFont(new Font("TimesRoman", Font.PLAIN, 20));
+		g.setFont(new Font("TimesRoman", Font.PLAIN, 0));
 		g.drawString((new Integer(vertex)).toString(),x-5,y+5);		
 	}
 	public void invertEdge(int vertex,int par){
@@ -219,7 +216,7 @@ class MyFrame extends JFrame implements ActionListener, MouseListener{
 	}
 	public void shortestPath(int src,int sink){
 		Graphics g= getGraphics();
-		int width = 50,height=50;
+		int width = 10,height=10;
 		int i=0;
 		while(i<adjList.size()){
 			Iterator itr = adjList.get(i).iterator();
@@ -243,8 +240,8 @@ class MyFrame extends JFrame implements ActionListener, MouseListener{
 			g.fillOval(x-width/2,y-height/2,width,height);
 			g.setColor(Color.BLACK);
 			g.drawOval(x-width/2,y-height/2,width,height);
-			g.setFont(new Font("TimesRoman", Font.PLAIN, 20));
-			g.drawString((new Integer(i)).toString(),x-5,y+5);
+			g.setFont(new Font("TimesRoman", Font.PLAIN, 0));
+			g.drawString((new Integer(i)).toString(),x,y);
 		}
 		int[] dist = new int[V];
 		int[] parent = new int[V];
