@@ -7,6 +7,16 @@
       <root url="jar://$PROJECT_DIR$/lib/forms-1.3.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.45-bin.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/swt-win32-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gluegen.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jogl-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/joal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/joal-android-natives-windows-i586.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gluegen-rt-natives-windows-i586.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jocl-natives-windows-i586.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jogl-all-natives-windows-i586.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gluegen-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gluegen-rt-natives-windows-amd64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jogl-all-natives-windows-amd64.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/lib/swt-win32-2.1.0.jar!/" />
